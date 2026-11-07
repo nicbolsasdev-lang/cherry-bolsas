@@ -1,0 +1,46 @@
+/* Reference artboard: 1023 × 577. All desktop dimensions share its width scale. */
+.announcement{height:1.85vw;min-height:0;padding:0 1.5vw;gap:2vw;font-size:.59vw;font-weight:600;letter-spacing:.065vw;line-height:1;background:#650d29}
+.announcement>span{font-size:1.05vw;line-height:1}
+header{position:relative;height:8.3vw;margin:0;padding:0 2.8vw;background:#faf8f4;grid-template-columns:1fr auto 1fr;border-bottom:1px solid #d9d0cb}
+header .desktop-nav{grid-column:1;font-size:1.45vw;gap:3.2vw}
+header .brand{position:absolute;left:47%;top:50%;transform:translate(-50%,-50%);width:10.75vw;height:6.65vw;display:block;padding:0}
+header .brand>img{position:absolute;top:0;left:4.7vw;width:2.45vw;height:2.3vw;margin:0}
+header .brand>span{position:absolute;top:1.95vw;left:.4vw;font-family:'Parisienne',cursive;font-size:4.15vw;font-weight:400;line-height:1;white-space:nowrap}
+header .brand>small{display:none}
+header .header-actions{grid-column:3;justify-self:end;gap:1.8vw;align-items:center}
+header .header-actions .icon{padding:.3vw}
+header .icon svg{width:1.55vw;height:1.55vw;stroke-width:1.25}
+header .icon>span{min-width:.8vw;font-size:.5vw;line-height:.8vw;top:-.15vw;right:-.1vw}
+header .instagram-link{display:inline-flex;align-items:center;font-size:.98vw;margin-left:0}
+.hero.hero-v2.hero-clean{height:46.25vw;min-height:0;max-height:none;padding:0;background:#faf8f4}
+.hero.hero-clean .hero-canvas{--product-width:22.5vw;display:flex;width:100%;height:100%;min-height:0;max-height:none;margin:0;padding:0 0 5.8vw;gap:0;align-items:center;justify-content:center}
+.hero.hero-clean .hero-word-left{flex:0 0 auto;font-family:'Italiana',Georgia,serif;font-size:17.65vw;font-weight:400;letter-spacing:-.03em;line-height:1;color:#650d29}
+.hero.hero-clean .hero-word-right{flex:0 0 auto;font-family:'Parisienne',cursive;font-size:19vw;font-weight:400;letter-spacing:-.05em;line-height:1;color:#650d29}
+.hero.hero-clean .bag-viewer{flex:0 0 calc(var(--product-width) * .89);width:calc(var(--product-width) * .89);height:100%;max-height:none;min-width:0;margin:0}
+.hero.hero-clean .bag-object{flex:0 0 var(--product-width);width:var(--product-width);min-width:var(--product-width);height:100%}
+.hero.hero-clean .bag-slide img,.hero.hero-clean .bag-slide[data-bag] img{width:100%;height:100%;max-width:100%;object-fit:contain}
+.hero.hero-clean .bag-floor-shadow{display:none}
+.hero.hero-clean .hero-pause-minimal{right:2.8vw;bottom:1.6vw}
+@media(max-width:600px){
+ .announcement{height:20px;font-size:5px;letter-spacing:.5px;gap:12px;padding:0 8px}
+ .announcement>span{font-size:10px}
+ header{height:76px;padding:0 5%}
+ header .mobile-only{grid-column:1;justify-self:start;font-size:20px}
+ header .brand{left:50%;width:105px;height:65px}
+ header .brand>img{left:46px;top:0;width:24px;height:23px}
+ header .brand>span{left:4px;top:19px;font-size:41px}
+ header .header-actions{gap:15px}
+ header .header-actions .icon{padding:3px}
+ header .icon svg{width:16px;height:16px}
+ header .icon>span{min-width:9px;font-size:6px;line-height:9px;top:-2px;right:-2px}
+ header .instagram-link{display:none}
+ .hero.hero-v2.hero-clean{height:calc(100svh - 96px);min-height:300px;max-height:550px}
+ .hero.hero-clean .hero-canvas{padding-bottom:6vw}
+ .hero.hero-clean .hero-word-left{font-size:17.65vw}
+ .hero.hero-clean .hero-word-right{font-size:19vw}
+ .hero.hero-clean .hero-pause-minimal{right:4%;bottom:15px}
+}
+
+/* Bring the last o and first d into contact with the bag. */
+.hero.hero-clean .hero-word-left{transform:translateX(2.2vw)}
+.hero.hero-clean .hero-word-right{transform:translateX(-2.2vw)}
